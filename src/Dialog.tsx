@@ -25,11 +25,10 @@ const Dialog: React.FC<DialogProps> = ({ open, onClose, children }) => {
       onClick={onClose}
     >
       <div
+        className="rounded-2xl"
         style={{
           background: "#fff",
-          borderRadius: 12,
           boxShadow: "0 4px 24px rgba(0,0,0,0.2)",
-          padding: 32,
           minWidth: 320,
           maxWidth: "90vw",
           maxHeight: "90vh",

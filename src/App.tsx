@@ -1,12 +1,24 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./App.css";
 import Dialog from "./Dialog";
 
 function App() {
   const [dialog, setDialog] = useState(false);
   const [dialogContent, setDialogContent] = useState<React.ReactNode>(null);
+
+  useEffect(() => {
+    if (dialog) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [dialog]);
+
   const { card, title } = {
-    card: "bg-white/80 shadow-xl rounded-2xl p-8 max-w-md mx-auto gap-3 flex flex-col w-full text-left hover:shadow-2xl transition-all duration-300 cursor-pointer border border-gray-200 backdrop-blur-sm",
+    card: "bg-white/80  shadow-xl rounded-2xl p-8 max-w-md mx-auto gap-3 flex flex-col w-full text-left hover:shadow-2xl transition-all duration-300 cursor-pointer border border-gray-200 backdrop-blur-sm",
     title: "text-xl font-semibold tracking-tight text-gray-900 ",
   };
 
@@ -48,7 +60,7 @@ function App() {
       content: (
         <>
           <h3 className={title}>Who is Man?</h3>
-          <span className="text-red-500 font-bold">Man is sinful 🤬</span>
+          <span className="text-red-500 font-bold">Man is sinful 😩</span>
           <p>
             <span className="font-bold">Romans 3:23 </span>
             For everyone has sinned; and all fall short of God’s glorious
@@ -110,7 +122,7 @@ function App() {
         <>
           <h3 className={title}>What must man do?</h3>
           <span className="italic">
-            Put our Faith in Jesus Christ. Grace alone Christ Alone
+            "Put our Faith in Jesus Christ. Grace alone Christ Alone"
           </span>
           <p>
             <span className="font-bold">1 Peter 3:18 </span>
@@ -146,7 +158,7 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen py-12 flex flex-col gap-8 items-center justify-center bg-gradient-to-br from-gray-50 via-gray-100 to-gray-200">
+    <div className="min-h-screen px-4  py-12 flex flex-col gap-8 items-center justify-center bg-gradient-to-br from-gray-50 via-gray-100 to-gray-200">
       <h1 className="text-gray-900 text-4xl font-extrabold tracking-tight mb-4 drop-shadow-sm">
         Gospel of Jesus Christ
       </h1>
