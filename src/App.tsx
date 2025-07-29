@@ -220,14 +220,13 @@ function App() {
 
   return (
     <div className="min-h-screen px-3 sm:px-4 py-6 sm:py-8 flex flex-col gap-6 sm:gap-8 items-center justify-start bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100">
-      {/* Header */}
       <div className="text-center mb-4 sm:mb-6 w-full">
-        <div className="bg-white/95 backdrop-blur-md shadow-2xl rounded-2xl sm:rounded-3xl p-6 sm:p-8 md:p-12 border border-blue-100 max-w-xl sm:max-w-2xl mx-auto">
+        <div className="bg-white/95 backdrop-blur-md shadow-2xl rounded-2xl sm:rounded-3xl p-4 border border-blue-100 max-w-xl sm:max-w-2xl mx-auto">
           <div className="mb-4 sm:mb-6">
             <div className="text-4xl sm:text-5xl md:text-6xl mb-3 sm:mb-4">
               ✝️
             </div>
-            <h1 className="text-3xl sm:text-4xl md:text-6xl font-black tracking-tight mb-4 sm:mb-6 bg-gradient-to-r from-blue-700 via-purple-600 to-blue-800 bg-clip-text text-transparent">
+            <h1 className="text-xl font-black tracking-tight mb-4 sm:mb-6 bg-gradient-to-r from-blue-700 via-purple-600 to-blue-800 bg-clip-text text-transparent">
               The Gospel
             </h1>
             <p className="text-base sm:text-lg md:text-2xl text-gray-700 font-medium mb-3 sm:mb-4">
@@ -282,12 +281,6 @@ function App() {
           <p className="text-xs sm:text-sm text-blue-700 font-bold tracking-wider uppercase">
             Romans 1:16
           </p>
-          <div className="mt-3 sm:mt-4 md:mt-6 pt-3 sm:pt-4 md:pt-6 border-t border-gray-200">
-            <p className="text-gray-600 text-xs sm:text-sm">
-              Share this Gospel message with others • Click any card to learn
-              more
-            </p>
-          </div>
         </div>
       </div>
 
