@@ -46,9 +46,7 @@ function App() {
         <>
           <h3 className={title}>Who is God?</h3>
           <div className="bg-gradient-to-r from-green-50 to-emerald-50 border-l-4 border-green-500 p-4 sm:p-5 rounded-r-xl mb-4 sm:mb-5 shadow-inner">
-            <span className="text-green-800 font-black text-xl sm:text-2xl">
-              God is Holy
-            </span>
+            <span className=" font-black text-xl sm:text-2xl">God is Holy</span>
           </div>
           <div className="space-y-3 sm:space-y-4">
             <div className="p-2 sm:p-3 bg-gray-50 rounded-lg">
@@ -79,7 +77,7 @@ function App() {
         <>
           <h3 className={title}>Who is Man?</h3>
           <div className="bg-gradient-to-r from-red-50 to-rose-50 border-l-4 border-red-500 p-4 sm:p-5 rounded-r-xl mb-4 sm:mb-5 shadow-inner">
-            <span className="text-red-800 font-black text-xl sm:text-2xl">
+            <span className="font-black text-xl sm:text-2xl">
               Man is sinful 😔
             </span>
           </div>
